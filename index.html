@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+  <section class="main-cont">
+    <img id="pod-logo" src="starter-code/assets/desktop/logo.svg" alt="pod">
+    <img id="big-image" src="starter-code/assets/desktop/image-host.jpg" alt="big-image">
+    <img id="dot-pattern" src="starter-code/assets/desktop/bg-pattern-dots.svg" alt="dot-pattern">
+    <section class="main-in-cont">
+      <p id="title">Publish your podcasts <span id="title-highlight">everywhere.</span></p>
+      <p id="desc">
+        Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <section class="sponsors" id="sponsors-mobile" hidden>
+        <img class="sponsor-mobile" src="starter-code/assets/desktop/spotify.svg" alt="spotify-logo">
+        <img class="sponsor-mobile" src="starter-code/assets/desktop/apple-podcast.svg" alt="applepodcast-logo">
+        <img class="sponsor-mobile" src="starter-code/assets/desktop/google-podcasts.svg" alt="googlepodcast-logo">
+        <img class="sponsor-mobile" src="starter-code/assets/desktop/pocket-casts.svg" alt="pocketcast-logo">
+      </section>
+      <section class="email-in">
+        <input type="email" placeholder="Email Address" name="email" id="email">
+        <button id="email-submit">Request access</button>
+      </section>
+      <p id="err-message" hidden>Oops! Please check your email</p>
+      
+      <section class="sponsors">
+        <img src="starter-code/assets/desktop/spotify.svg" alt="spotify-logo">
+        <img src="starter-code/assets/desktop/apple-podcast.svg" alt="applepodcast-logo">
+        <img src="starter-code/assets/desktop/google-podcasts.svg" alt="googlepodcast-logo">
+        <img src="starter-code/assets/desktop/pocket-casts.svg" alt="pocketcast-logo">
+      </section>
+    </section>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

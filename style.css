@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    background: #121725;
+}
+.main-cont{
+    margin: 3rem 0 3rem 5rem;
+    overflow-x: hidden;
+}
+#big-image{
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+#dot-pattern{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.main-in-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 723px;
+    height: 509px;
+    flex-shrink: 0;
+    margin-top: 5rem;
+    background: #121725;
+}
+#title{
+    color: #54E6AF;
+    font-family: Chivo;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 62px; /* 119.231% */
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+#title-highlight{
+    color: #FFF;
+    font-family: Chivo;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 62px;
+    text-transform: uppercase;
+}
+#desc{
+    width: 445px;
+    color: #C2CBE5;
+    font-family: Chivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    margin: 1rem 0;
+}
+.email-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 427px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #2C344B;
+}
+#email{
+    color: #FFF;
+    font-family: Chivo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+    opacity: 0.5;
+    margin-left: 1rem;
+    background: none;
+    border: none;
+}
+#email-submit{
+    border: none;
+    margin-right: 0.5rem;
+    width: 162px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #54E6AF;
+    box-shadow: 0px 2px 4px 0px rgba(84, 230, 175, 0.14);
+    color: #121725;
+    font-family: Chivo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+}
+#email-submit:hover{
+    cursor: pointer;
+    border-radius: 28px;
+    background: #B3FFE2;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+}
+#err-message{
+    margin: 0 0 0 1rem;
+    color: #FB3E3E;
+    font-family: Chivo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sponsors{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#sponsors-mobile{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    body{
+        height: 1024px;
+    }
+    .main-cont{
+        margin: 0 0 0 1rem;
+    }
+    #pod-logo{
+        margin-top: 3rem;
+    }
+    #big-image{
+        content: url("starter-code/assets/tablet/image-host.jpg");
+        position: absolute;
+        right: 0;
+        z-index: -2;
+    }
+    #dot-pattern{
+        position: absolute;
+        left: 0;
+        bottom: -25rem;
+        z-index: -1;
+    }
+    .main-in-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 635px;
+        height: 509px;
+        flex-shrink: 0;
+        margin-top: 5rem;
+        background: #121725;
+    }
+    #title{
+        color: #54E6AF;
+        font-family: Chivo;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 56px; /* 116.667% */
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    #title-highlight{
+        color: #FFF;
+        font-family: Chivo;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 56px;
+        text-transform: uppercase;
+    }
+    #desc{
+        width: 445px;
+        color: #C2CBE5;
+        font-family: Chivo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px; /* 155.556% */
+        margin: 1rem 0;
+    }
+    .email-in{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 427px;
+        height: 56px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        background: #2C344B;
+    }
+    #email{
+        color: #FFF;
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+        opacity: 0.5;
+        margin-left: 1rem;
+        background: none;
+        border: none;
+    }
+    #email-submit{
+        border: none;
+        margin-right: 0.5rem;
+        width: 162px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        background: #54E6AF;
+        box-shadow: 0px 2px 4px 0px rgba(84, 230, 175, 0.14);
+        color: #121725;
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+    }
+    #err-message{
+        margin: 0 0 0 1rem;
+        color: #FB3E3E;
+        font-family: Chivo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .sponsors{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    #sponsors-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    body{
+        height: 100%;
+    }
+    .main-cont{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #pod-logo{
+        margin-top: 1rem;
+    }
+    #big-image{
+        content: url("starter-code/assets/mobile/image-host.jpg");
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.1;
+    }
+    #dot-pattern{
+        display: none;
+    }
+    .main-in-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-shrink: 0;
+        margin-top: 0;
+        background: #12172516;
+    }
+    #title{
+        color: #54E6AF;
+        text-align: center;
+        font-family: Chivo;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 38px; /* 146.154% */
+        text-transform: uppercase;
+        margin: 0;
+    }
+    #title-highlight{
+        color: #FFF;
+        font-family: Chivo;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+    #desc{
+        width: 327px;
+        color: #C2CBE5;
+        text-align: center;
+        font-family: Chivo;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px; /* 166.667% */
+        margin: 0;
+    }
+    .email-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        gap: 0.5rem;
+        flex-shrink: 0;
+        background: none;
+    }
+    #email{
+        margin: 0;
+        width: 327px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        background: #2C344B;
+        color: #FFF;
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+        opacity: 1;
+        padding-left: 1rem;
+    }
+    #email-submit{
+        margin: 0;
+        border: none;
+        width: 326px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        background: #54E6AF;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+        color: #121725;
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 200% */
+    }
+    #err-message{
+        margin: 0 0 0 1rem;
+        color: #FB3E3E;
+        font-family: Chivo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .sponsors{
+        display: none;
+        width: 420px;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .sponsor-mobile{
+        height: 17px;
+    }
+    #sponsors-mobile{
+        display: flex;
+    }
+}
